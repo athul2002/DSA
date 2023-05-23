@@ -1,0 +1,12 @@
+1. To print string :-
+string str;
+getline(cin,str);
+
+2. getline(cin,str,'a') stops when seeing a
+
+3.for (char x:str)
+cout<<x;
+prints all char of string
+
+4. reverse(str.begin(),str.end()) ->reverse string
+5. strcmp(),strcpy

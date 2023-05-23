@@ -1,0 +1,65 @@
+-To save file => save filename
+-To remove all variables => clear
+-To load variables => load filename
+-To display contents of a variable => variable
+-To clear command window => clc
+-displaying more decimal places=> format long (format short for previous default)
+                                  x
+
+
+--------------------------------------------------------------------------------------
+
+1. NEW live script
+2. Click on text for adding text 
+3.Section break to break into sections..
+
+-To execute the code for just one section, you can click the  Run Section button in the MATLAB Toolstrip.
+
+
+to create a row array-> [7 9]
+to create a coloumn array -> [7;9]
+
+
+-> data(:,3)-- gives 3rd column
+-> data(3,:)-- gives 3rd row
+
+You can find the maximum value of a vector and its corresponding index value using the max function. The first output from the max function is the maximum value of the input vector. When called with two outputs, the second output is the index value.
+[xMax,idx] = max(x)
+
+The size function can be applied to a matrix to produce either a single output variable or two output variables. Use square brackets ([ ]) to obtain more than one output.
+[xrow,xcol] = size(x)
+
+You can also open the documentation using the doc function. If you know the name of the function and want more information about it, you can use the code below:
+doc randi
+
+To plot one line on top of another, use the hold on command to hold the previous plot while you add another line.
+plot(x1,y1)
+hold on
+plot(x2,y2)
+
+plot(y,"LineWidth",5)
+plot(x,y,"ro-","LineWidth",5)
+
+title("Sample Mass")
+ylabel("Mass (g)")
+legend("a","b","c")
+
+You can use a variable's value in plot annotations by joining text with a variable:
+bar(data(3,:))
+title("Sample " + sample(3) + " Data")
+
+You can use a variable's value in plot annotations by joining text with a variable:
+bar(data(3,:))
+title("Sample " + sample(3) + " Data")
+
+elements=sortrows(elements,"Mass")
+
+
+You can use a logical array as an array index, in which case MATLAB extracts the array elements where the index is 1 (true). The following example will extract all elements in v1 that are greater than six.
+v = v1(v1 > 6)
+v =
+    6.6678
+    9.0698
+
+If you want to loop over a vector of unknown length, you can use the length function instead:
+for idx = 1:length(density)

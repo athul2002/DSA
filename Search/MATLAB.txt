@@ -1,0 +1,20 @@
+-To save file => save filename
+-To remove all variables => clear
+-To load variables => load filename
+-To display contents of a variable => variable
+-To clear command window => clc
+-displaying more decimal places=> format long (format short for previous default)
+                                  x
+
+
+--------------------------------------------------------------------------------------
+
+1. NEW live script
+2. Click on text for adding text 
+3.Section break to break into sections..
+
+-To execute the code for just one section, you can click the  Run Section button in the MATLAB Toolstrip.
+
+
+to create a row array-> [7 9]
+to create a coloumn array -> [7;9]

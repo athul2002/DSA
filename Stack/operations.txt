@@ -1,0 +1,8 @@
+isEmpty() - returns true if tack is empty, else false
+push(x) - Insert an item to the top of stack
+pop()- removes an item from top
+peek()-returns top item
+size()-gives size
+
+underflow- when pop() or peek() called on empty stack
+overflow- when push called on a full stack
